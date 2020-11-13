@@ -2,20 +2,28 @@
     font-family: sans-serif;
 }
 
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cards-list {
     z-index: 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     overflow-x: auto;
+    margin-left: 3%;
   }
 
   .card {
     margin: 30px auto;
     padding: 0;
-    width: 100%;
+    width: 300px;
     height: 300px;
     border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     transition: 0.4s;
   }
@@ -38,11 +46,17 @@
     border-radius: 0px 0px 40px 40px;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 40px;
-    margin-top: -160px;
+    font-size: 14px;
+    color: black;
+    margin-top: -100px;
     height: 40px;
   }
   
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
   
   .title-white {
     color: white;
@@ -66,8 +80,10 @@
     }
   }
 
-  .container {
+  .blog-cont {
       display: flex;
-      justify-content: space-around;
-      border: 2px solid black;
+  }
+
+  .blog {
+      padding: 43px;
   }
